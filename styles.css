@@ -1,0 +1,104 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+@font-face {
+    font-family: 'Red Hat';
+    src: url(fonts/Red_Hat_Display/RedHatDisplay-Italic-VariableFont_wght.ttf),
+    url(fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+  }
+@media (min-width: 768px) {
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+}
+body {
+    background-image: url('images/pattern-background-mobile.svg');
+    background-color: var(--Very-pale-blue);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat', sans-serif;
+   
+}
+#card {
+    max-width: 327px;
+    max-height: 567px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+#hero-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+#card h3 {
+    font-size: 1.5rem;
+    color: var(--Dark-blue);
+    margin-bottom: -10px;
+}
+#card p {
+    width: 90%;
+    color: var(--Desaturated-blue);
+}
+#price {
+    width: 259px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+    gap: 11px;
+}
+#price span {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+#price a{
+    color: var(--Bright-blue);
+}
+#price a:hover{
+    text-decoration: none;
+    opacity: 80%;
+}
+.payment {
+    width: 279px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    border-radius: 11px;
+    
+    box-shadow: 10px 10px 5px var(--Very-pale-blue);
+}
+.payment:hover {
+    opacity: 80%;
+}
+.cancel {
+    width: 279px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+.cancel:hover {
+    color: var(--Dark-blue);
+}
